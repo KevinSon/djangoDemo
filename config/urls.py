@@ -25,3 +25,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', base_views.list, name='list'),  # '/' 에 해당되는 path
 ]
+
+handler404 = 'common.views.page_not_found'
